@@ -1,27 +1,122 @@
-.navbar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .parallax{
+        background-attachment: scroll;
+        height: 100%;
+        width: 100%;
+    }
 }
 
-.navbar ul li {
-  float: left;
+.projectpage{
+    background-color: #F89880;
 }
 
-.navbar ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar ul li a:hover {
-  background-color: #111111;
+.biopage{
+    background-color: #F08080;
 }
 header {
     text-align: center;
-    padding: 10px 10px;
+}
+
+.parallax {
+background-image: url('https://codehs.com/uploads/02caf8bd18c670654c8605ed071b27e9');
+
+height: 500px;
+
+/* Create the parallax scrolling effect */
+background-attachment: scroll;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.indexpage{
+    background-color: #FF7F50;
+}
+
+.faviconimg{
+    height: 50px;
+    width: 50px;
+}
+
+.titleofpage{
+    background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #00008B;
+  display: flex;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #EDFAC3;
+  font-size: 20px;
+  transform: rotate(360deg);
+  transition: transform 0.5s
+}
+
+.tab.active{
+  background-color: #007bff; /* Active tab color */
+  color: white;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+footer {
+    background-color: pink;
 }
