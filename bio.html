@@ -16,6 +16,28 @@
         <link rel="favicon" type="text/html" href="project.html">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/3eb64cc06d266f4414922c5d34f31272">
+    
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en', // Default language of your website
+                    includedLanguages: 'es,fr,de,zh-CN', // Languages to display (comma-separated)
+                    layout: google.translate.TranslateElement.InlineLayout.BUTTON
+                }, 'google_translate_element'); // ID of the container div
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+              const editor = document.getElementById("editor");
+              editor.addEventListener("input", () => {
+                localStorage.setItem("savedText", editor.innerHTML);
+            });
+
+                editor.innerHTML = localStorage.getItem("savedText") || "";
+            });
+        </script>
     </head>
     <body class="biopage">
         <main class="container">
@@ -48,6 +70,7 @@
             </div>
             <br>
             <h6> Link </h6>
+            <a href = "https://en.wikipedia.org/wiki/List_of_dance_styles" onclick="alert('You clicked the link!');"> Click Me!</a>
             <br>
             
             <h5> Learning Languages </h5>
@@ -63,6 +86,8 @@
                 <li> Spanish </li>
             </ol>
             <img src="https://codehs.com/uploads/c0a5c0505ac4ed8e9beff78c8b15bf38">
+            <br>
+            <button id="google_translate_element"></button>
             <br>
             <h6> Link </h6>
             <a href="https://www.duolingo.com/log-in?isLoggingIn=true" onclick="alert('You clicked the link!');"> Click Me </a>
@@ -84,10 +109,18 @@
             <h6> Link </h6>
             
             <a href="https://library.livermoreca.gov/home-library" onclick="alert('You clicked the link!');">Click Me</a>
+            <br>
+            <h5> Additional Information Area: </h5>
+            <p> One can add their own information or additional information to it! It is automatically saved!</p>
+            <div id="editor" contenteditable="true" spellcheck="true">
+                <p>Edit Me!</p>
+            </div>
         </main>
         <br>
         <footer class="mt-auto">
             <p>Written by: Anvi Tandon</p>
+            <p>Granada Website:<a href = "https://granadahigh.livermoreschools.org/"> Granada Home </a></p>
             <p>Email: <a href = "https://mail.google.com/mail/u/1/?view=cm&fs=1&to=anviaishvi@gmail.com&tf=1">anviaishvi@gmail.com</a></p>
         </footer>
     </body>
+</html>
