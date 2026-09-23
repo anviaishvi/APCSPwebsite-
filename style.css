@@ -135,6 +135,6 @@ button {
     border-radius: 8px;
     background-color: #F9F9F9;
 
-footer {
-    background-color: pink;
+.mt-auto {
+    background-color: white;
 }
