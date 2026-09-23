@@ -12,11 +12,11 @@
 }
 
 .projectpage{
-    background-color: #F89880;
+    background-color: #F4C2C2;
 }
 
 .biopage{
-    background-color: #F08080;
+    background-color: #E6E6FA;
 }
 header {
     text-align: center;
@@ -79,6 +79,18 @@ ul li a:hover {
   color: white;
 }
 
+goog-te-gadget {
+    font-size: 0 !important;
+    color: transparent !important;
+    }
+    
+.goog-te-gadget .goog-te-combo {
+    font-size: 14px !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    border: 1px solid #ccc !important;
+    }
+
 .image-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -116,6 +128,12 @@ button {
     cursor: pointer;
     transition: all 0.3s;
 }
+
+#editor {
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F9F9F9;
 
 footer {
     background-color: pink;
